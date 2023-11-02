@@ -678,18 +678,18 @@ function Dashboard() {
                                             <CardBody>
                                                 <CardTitle h5>How to create a blog for Medium and make it professional?</CardTitle>
                                                 <CardText className="small fw-light">Medium is an open platform where readers find dynamic thinking, and where expert and undiscovered voices can share their writing on any topic.</CardText>
-                                                <CardText class="card-text d-flex justify-content-between">
-                                                    <Badge color="dark" pill className="mx-1">
+                                                <CardText class="card-text">
+                                                    <Badge color="light" pill className="border text-dark mx-1">
                                                         AI
                                                     </Badge>
-                                                    <Badge color="dark" pill className="mx-1">
+                                                    <Badge color="light" pill className="border text-dark mx-1">
                                                         Marqueting
                                                     </Badge>
-                                                    <Badge color="dark" pill className="mx-1">
+                                                    <Badge color="light" pill className="border text-dark mx-1">
                                                         Writters
                                                     </Badge>
-                                                    <Badge color="dark" pill className="mx-1">
-                                                        Articles
+                                                    <Badge color="light" pill className="border text-dark mx-1">
+                                                        Article
                                                     </Badge>
                                                 </CardText>
                                             </CardBody>
