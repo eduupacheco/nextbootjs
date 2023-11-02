@@ -1,95 +1,61 @@
-import Image from 'next/image'
-import styles from './page.module.css'
+import Link from "next/link";
 
-export default function Home() {
+import Image from 'next/image';
+import logo from '../public/logo.png';
+
+function Page() {
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
+    <main>
+      <div className="container py-4">
+        <header className="pb-3 mb-4 border-bottom">
+          <a href="/" className="d-flex align-items-center text-body-emphasis text-decoration-none">
             <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
               priority
+              src={logo}
+              width={32}
+              height={32}
             />
+            <span className="fs-4">NextBootJS</span>
           </a>
+        </header>
+
+        <div className="p-5 mb-4 bg-body-tertiary rounded-3">
+          <div className="container-fluid py-5">
+            <h1 className="display-5 fw-bold">Build your NextJS app faster </h1>
+            <p className="col-md-8 fs-4">Now you can build your NextJS and Bootstrap skeleton app faster with NextBootJS.</p>
+            <Link href={'/dashboard'}>
+              <button className="btn btn-primary btn-lg" type="button">Live Preview</button>
+            </Link>
+          </div>
         </div>
-      </div>
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+        <div className="row align-items-md-stretch">
+          <div className="col-md-6">
+            <div className="h-100 p-5 text-bg-dark rounded-3">
+              <h2>Github</h2>
+              <p>This project is made in order to streamline the tools we need to build a web application. How to build it? Check the git repository.</p>
+              <Link href={'https://github.com/eduupacheco/nextbootjs'}>
+                <button className="btn btn-outline-light" type="button">Repository</button>
+              </Link>
+            </div>
+          </div>
+          <div className="col-md-6">
+            <div className="h-100 p-5 bg-body-tertiary border rounded-3">
+              <h2>Reactstrap</h2>
+              <p>To make possible this template we are using NextJS and Bootstrap based on Reactstrap. If you want to know more about the components you can visit the oficial page of Reactstrap.</p>
+              <Link href={'https://reactstrap.github.io/?path=/story/home-installation--page'}>
+                <button className="btn btn-outline-secondary" type="button">Components</button>
+              </Link>
+            </div>
+          </div>
+        </div>
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore the Next.js 13 playground.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
+        <footer className="pt-3 mt-4 text-body-secondary border-top">
+          © 2024
+        </footer>
       </div>
     </main>
   )
 }
+
+export default Page
