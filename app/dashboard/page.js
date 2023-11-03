@@ -19,6 +19,8 @@ import linkIcon from "../../public/link-solid.svg";
 import envelopeIcon from "../../public/envelope-solid.svg";
 import envelopeOpenIcon from "../../public/envelope-open-solid.svg";
 
+import pollIcon from "../../public/square-poll-vertical-solid.svg";
+
 import {
     Table,
     Col,
@@ -798,7 +800,13 @@ function Dashboard() {
                                                 value={5}
                                             />
                                             <CardText>
-                                                <small className="text-muted">
+                                                <Image
+                                                    priority
+                                                    src={pollIcon}
+                                                    width={20}
+                                                    height={20}
+                                                />
+                                                <small className="text-muted mx-1">
                                                     0 Votes
                                                 </small>
                                             </CardText>
