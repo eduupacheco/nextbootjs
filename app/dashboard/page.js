@@ -16,6 +16,9 @@ import rejectIcon from "../../public/rectangle-xmark-solid.svg";
 import commentIcon from "../../public/message-regular.svg";
 import linkIcon from "../../public/link-solid.svg";
 
+import envelopeIcon from "../../public/envelope-solid.svg";
+import envelopeOpenIcon from "../../public/envelope-open-solid.svg";
+
 import {
     Table,
     Col,
@@ -27,7 +30,9 @@ import {
     ListGroup,
     ListGroupItem,
     Button,
-    Badge
+    Badge,
+    Progress,
+    Spinner
 } from "reactstrap";
 
 function Dashboard() {
@@ -703,9 +708,113 @@ function Dashboard() {
                                 </CardText>
                             </CardBody>
                         </Card>
+                        <Card className="my-2">
+                            <CardBody>
+                                <CardTitle tag="h6" className="d-flex justify-content-between">
+                                    <div className="align-self-center">
+                                        <img
+                                            src="https://imgv3.fotor.com/images/gallery/Realistic-Male-Profile-Picture.jpg"
+                                            alt="..."
+                                            className="rounded-circle"
+                                            width={35}
+                                            height={35}
+                                        >
+                                        </img>
+                                        <span className="mx-2 fw-light">Eduardo Pacheco</span>
+                                        <span className="mx-2 fw-light small">Mon, 27 Sep 2023 at 10:05</span>
+                                        <Badge
+                                            color="dark"
+                                            pill
+                                            className="mx-2"
+                                        >
+                                            Poll
+                                        </Badge>
+                                    </div>
+                                    <div className="align-self-center">
+                                        <Image
+                                            priority
+                                            src={approvedIcon}
+                                            width={20}
+                                            height={20}
+                                            className="mx-1"
+                                        />
+                                        <Image
+                                            priority
+                                            src={editIcon}
+                                            width={16}
+                                            height={16}
+                                            className="mx-2"
+                                        />
+                                        <Image
+                                            priority
+                                            src={rejectIcon}
+                                            width={18}
+                                            height={18}
+                                            className="mx-1"
+                                        />
+                                    </div>
+                                </CardTitle>
+                                <CardText>
+                                    This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                </CardText>
+                                <Card className="mb-3">
+                                    <div class="row g-0 m-0 p-0">
+                                        <CardBody>
+                                            <CardTitle h6>What is your favourite color?</CardTitle>
+                                            <div className="d-flex justify-content-between">
+                                                <label>Red</label>
+                                                <span className="text-muted small">15%</span>
+                                            </div>
+                                            <Progress
+                                                className="mb-2"
+                                                color="black"
+                                                value={15}
+                                            />
+                                            <div className="d-flex justify-content-between">
+                                                <label>Blue</label>
+                                                <span className="text-muted small">20%</span>
+                                            </div>
+                                            <Progress
+                                                className="mb-2"
+                                                color="black"
+                                                value={20}
+                                            />
+                                            <div className="d-flex justify-content-between">
+                                                <label>Green</label>
+                                                <span className="text-muted small">60%</span>
+                                            </div>
+                                            <Progress
+                                                className="mb-2"
+                                                color="black"
+                                                value={60}
+                                            />
+                                            <div className="d-flex justify-content-between">
+                                                <label>Red</label>
+                                                <span className="text-muted small">5%</span>
+                                            </div>
+                                            <Progress
+                                                className="mb-2"
+                                                color="black"
+                                                value={5}
+                                            />
+                                            <CardText>
+                                                <small className="text-muted">
+                                                    0 Votes
+                                                </small>
+                                            </CardText>
+                                        </CardBody>
+                                    </div>
+                                </Card>
+                                <CardText>
+                                    <small className="text-muted">
+                                        Last updated 5 days ago
+                                    </small>
+                                </CardText>
+                            </CardBody>
+                        </Card>
                     </div>
-                    <div className="border-start m-0 p-0 col-4">
-                        <div className="p-3">
+                    <div className="border-start m-0 p-0 col-4 pt-3">
+                        <div className="px-3 pb-3">
                             <ListGroup>
                                 <ListGroupItem>
                                     <Image
@@ -757,6 +866,153 @@ function Dashboard() {
                                 </ListGroupItem>
                             </ListGroup>
                         </div>
+                        <Card body className="mx-3 p-0 m-0">
+                            <CardTitle tag="h3" className="d-flex justify-content-between px-3 py-2 border-bottom m-0">
+                                <span>Messages</span>
+                            </CardTitle>
+                            <div className="p-0 m-0 pt-0" style={{ overflowY: 'auto', height: '50vh' }}>
+                                <div className="border-bottom px-3 py-3">
+                                    <div className="d-flex justify-content-between align-self-center">
+                                        <div>
+                                            <img
+                                                src="https://static.fotor.com/app/features/img/aiface/advance/2.png"
+                                                alt="..."
+                                                className="rounded-circle"
+                                                width={35}
+                                                height={35}
+                                            >
+                                            </img>
+                                            <span className="mx-2 fw-light">Victor Timely</span>
+                                        </div>
+                                        <Image
+                                            className="align-self-center"
+                                            priority
+                                            src={envelopeIcon}
+                                            width={15}
+                                            height={15}
+                                        />
+                                    </div>
+                                    <div className="pt-2">
+                                        <span className="fw-light small">
+                                            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                        </span>
+                                    </div>
+                                    <span style={{ fontSize: '12px' }} className="text-muted fw-light">Wed, 30 Oct 2023 at 17:41</span>
+                                </div>
+                                <div className="border-bottom px-3 py-3">
+                                    <div className="d-flex justify-content-between align-self-center">
+                                        <div>
+                                            <img
+                                                src="https://instasize.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fmunkee%2Fimage%2Fupload%2Fw_1000%2Cc_fill%2Car_1%3A1%2Cg_auto%2Cr_max%2Fv1681855894%2Finstasize-website%2Flearn%2Fblonde-woman-selfie-instagram-influencer.webp&w=828&q=75"
+                                                alt="..."
+                                                className="rounded-circle"
+                                                width={35}
+                                                height={35}
+                                            >
+                                            </img>
+                                            <span className="mx-2 fw-light">Caroline Danvers</span>
+                                        </div>
+                                        <Image
+                                            className="align-self-center"
+                                            priority
+                                            src={envelopeOpenIcon}
+                                            width={15}
+                                            height={15}
+                                        />
+                                    </div>
+                                    <div className="pt-2">
+                                        <span className="fw-light small">
+                                            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                        </span>
+                                    </div>
+                                    <span style={{ fontSize: '12px' }} className="text-muted fw-light">Wed, 30 Oct 2023 at 13:27</span>
+                                </div>
+                                <div className="border-bottom px-3 py-3">
+                                    <div className="d-flex justify-content-between align-self-center">
+                                        <div>
+                                            <img
+                                                src="https://assets-global.website-files.com/650865454c2393ac25711ff7/650865454c2393ac25714a3e_The%20best%20selfie%20Ideas%20for%20sm%20pfp.jpeg"
+                                                alt="..."
+                                                className="rounded-circle"
+                                                width={35}
+                                                height={35}
+                                            >
+                                            </img>
+                                            <span className="mx-2 fw-light">Colleen Wing</span>
+                                        </div>
+                                        <Image
+                                            className="align-self-center"
+                                            priority
+                                            src={envelopeOpenIcon}
+                                            width={15}
+                                            height={15}
+                                        />
+                                    </div>
+                                    <div className="pt-2">
+                                        <span className="fw-light small">
+                                            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                        </span>
+                                    </div>
+                                    <span style={{ fontSize: '12px' }} className="text-muted fw-light">Tue, 29 Oct 2023 at 10:22</span>
+                                </div>
+                                <div className="border-bottom px-3 py-3">
+                                    <div className="d-flex justify-content-between align-self-center">
+                                        <div>
+                                            <img
+                                                src="https://instasize.com/_next/image?url=https%3A%2F%2Fres.cloudinary.com%2Fmunkee%2Fimage%2Fupload%2Fw_1000%2Cc_fill%2Car_1%3A1%2Cg_auto%2Cr_max%2Fv1682630058%2Finstasize-website%2Flearn%2Fblonde-girl-sitting-down-pink-jacket.webp&w=828&q=75"
+                                                alt="..."
+                                                className="rounded-circle"
+                                                width={35}
+                                                height={35}
+                                            >
+                                            </img>
+                                            <span className="mx-2 fw-light">Yelena Belova</span>
+                                        </div>
+                                        <Image
+                                            className="align-self-center"
+                                            priority
+                                            src={envelopeOpenIcon}
+                                            width={15}
+                                            height={15}
+                                        />
+                                    </div>
+                                    <div className="pt-2">
+                                        <span className="fw-light small">
+                                            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                        </span>
+                                    </div>
+                                    <span style={{ fontSize: '12px' }} className="text-muted fw-light">Mon, 28 Oct 2023 at 12:01</span>
+                                </div>
+                                <div className="border-bottom px-3 py-3">
+                                    <div className="d-flex justify-content-between align-self-center">
+                                        <div>
+                                            <img
+                                                src="https://imgv3.fotor.com/images/gallery/Realistic-Male-Profile-Picture.jpg"
+                                                alt="..."
+                                                className="rounded-circle"
+                                                width={35}
+                                                height={35}
+                                            >
+                                            </img>
+                                            <span className="mx-2 fw-light">Eduardo Pacheco</span>
+                                        </div>
+                                        <Image
+                                            className="align-self-center"
+                                            priority
+                                            src={envelopeOpenIcon}
+                                            width={15}
+                                            height={15}
+                                        />
+                                    </div>
+                                    <div className="pt-2">
+                                        <span className="fw-light small">
+                                            This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+                                        </span>
+                                    </div>
+                                    <span style={{ fontSize: '12px' }} className="text-muted fw-light">Fri, 25 Oct 2023 at 11:56</span>
+                                </div>
+                            </div>
+                        </Card>
                     </div>
                 </div>
             </div>
