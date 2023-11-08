@@ -23,7 +23,7 @@ function Page() {
           <div className="container-fluid py-5">
             <h1 className="display-5 fw-bold">Build your NextJS app faster </h1>
             <p className="col-md-8 fs-4">Now you can build your NextJS and Bootstrap skeleton app faster with NextBootJS.</p>
-            <Link href={'/dashboard'}>
+            <Link href={'/demo/inbox'}>
               <button className="btn btn-primary btn-lg" type="button">Live Preview</button>
             </Link>
           </div>

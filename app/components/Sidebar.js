@@ -1,18 +1,9 @@
 "use client";
 import React, { useState } from 'react';
 import {
-    Collapse,
-    Navbar,
-    NavbarToggler,
-    NavbarBrand,
     Nav,
     NavItem,
     NavLink,
-    UncontrolledDropdown,
-    DropdownToggle,
-    DropdownMenu,
-    DropdownItem,
-    NavbarText,
     Card,
 } from 'reactstrap';
 
@@ -47,8 +38,8 @@ function CustomSidebar(args) {
                 <NavItem>
                     <NavLink
                         className='text-dark'
-                        href="#"
-                        active
+                        href="inbox"
+                        active={window?.location?.pathname?.includes('inbox')}
                     >
                         <Image
                             priority
@@ -63,7 +54,8 @@ function CustomSidebar(args) {
                 <NavItem>
                     <NavLink
                         className='text-dark'
-                        href="#"
+                        href="approved"
+                        active={window?.location?.pathname?.includes('approved')}
                     >
                         <Image
                             priority
@@ -78,7 +70,8 @@ function CustomSidebar(args) {
                 <NavItem>
                     <NavLink
                         className='text-dark'
-                        href="#"
+                        href="history"
+                        active={window?.location?.pathname?.includes('history')}
                     >
                         <Image
                             priority
