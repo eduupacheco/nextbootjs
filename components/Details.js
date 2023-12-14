@@ -181,7 +181,7 @@ export default function Details({ params }) {
                                     <span className="fw-light small">Eduardo Pacheco</span>
                                 </CardTitle>
                                 <CardText className="small">
-                                    Fantastic, definitely awesome! Let's post it.
+                                    Fantastic, definitely awesome! Lets post it.
                                 </CardText>
                             </CardBody>
                         </Card>
