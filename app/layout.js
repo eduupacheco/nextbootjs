@@ -1,5 +1,5 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../public/css/styles.css'
+import '@/styles/styles.css'
 
 export const metadata = {
   title: 'NextBootJS',

@@ -1,0 +1,27 @@
+.nav .nav-item .active {
+    background-color: black;
+}
+
+.nav .nav-item .active span {
+    color: white;
+}
+
+.no-border {
+    border: none !important;
+    outline: none !important;
+}
+
+.no-border:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.input-border:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: lightgray !important; 
+}
+
+.pointer {
+    cursor: pointer;
+}

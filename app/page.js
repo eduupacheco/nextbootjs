@@ -1,9 +1,15 @@
+"use client"
+
 import Link from "next/link";
 
 import Image from 'next/image';
-import logo from '../public/logo.png';
+import logo from '@/images/logo.png';
+
+import { useRouter } from "next/navigation";
+import { Button } from "reactstrap";
 
 function Page() {
+  const router = useRouter();
   return (
     <main>
       <div className="container py-4">
@@ -22,10 +28,14 @@ function Page() {
         <div className="p-5 mb-4 bg-body-tertiary rounded-3">
           <div className="container-fluid py-5">
             <h1 className="display-5 fw-bold">Build your NextJS app faster </h1>
-            <p className="col-md-8 fs-4">Now you can build your NextJS and Bootstrap skeleton app faster with NextBootJS.</p>
-            <Link href={'/demo/inbox'}>
-              <button className="btn btn-primary btn-lg" type="button">Live Preview</button>
-            </Link>
+            <p className="col-md-8 fs-4 fw-light">Now you can build your NextJS and Bootstrap skeleton app faster with NextBootJS.</p>
+            <Button
+              color="dark"
+              size="lg"
+              onClick={() => {
+                router.push('/inbox')
+              }}
+            >Live Preview</Button>
           </div>
         </div>
 
