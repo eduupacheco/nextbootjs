@@ -135,7 +135,7 @@ export default function Page({ params }) {
                     </div>
                 </CardTitle>
                 <CardText className="fw-light small">
-                    Hi support, how can I schedule a Instagram post? I'm trying to connect my instagram account but there are some issues there...
+                    Hi support, how can I schedule a Instagram post? I am trying to connect my instagram account but there are some issues there...
                 </CardText>
             </CardBody>
         </Card>
