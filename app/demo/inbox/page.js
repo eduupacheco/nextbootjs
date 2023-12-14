@@ -40,37 +40,37 @@ export default function Page() {
                 </div>
             </div>
             <div onClick={() => {
-                router.push('/interaction/demo')
+                router.push('/demo/interaction/demo')
             }}>
                 <CardTextPreview />
             </div>
             <div onClick={() => {
-                router.push('/interaction/demo')
+                router.push('/demo/interaction/demo')
             }}>
                 <CardURLPreview />
             </div>
             <div onClick={() => {
-                router.push('/interaction/demo')
+                router.push('/demo/interaction/demo')
             }}>
                 <CardSharePreview />
             </div>
             <div onClick={() => {
-                router.push('/interaction/demo')
+                router.push('/demo/interaction/demo')
             }}>
                 <CardCommentPreview />
             </div>
             <div onClick={() => {
-                router.push('/interaction/demo')
+                router.push('/demo/interaction/demo')
             }}>
                 <CardThreadPreview />
             </div>
             <div onClick={() => {
-                router.push('/interaction/demo')
+                router.push('/demo/interaction/demo')
             }}>
                 <CardBlogPreview />
             </div>
             <div onClick={() => {
-                router.push('/interaction/demo')
+                router.push('/demo/interaction/demo')
             }}>
                 <CardPollPreview />
             </div>

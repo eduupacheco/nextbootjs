@@ -27,7 +27,7 @@ export default function Settings() {
                 <ListGroupItem
                     className="d-flex align-items-center pointer"
                     onClick={() => {
-                        router.push('/settings/channel/demo');
+                        router.push('/demo/settings/channel/demo');
                     }}
                 >
                     <div style={{ position: "relative" }}>
@@ -61,7 +61,7 @@ export default function Settings() {
                 <ListGroupItem
                     className="d-flex align-items-center pointer"
                     onClick={() => {
-                        router.push('/settings/channel/demo');
+                        router.push('/demo/settings/channel/demo');
                     }}
                 >
                     <div style={{ position: "relative" }}>
@@ -97,7 +97,7 @@ export default function Settings() {
                 <span
                     className="pointer"
                     onClick={() => {
-                        router.push('/settings/add')
+                        router.push('/demo/settings/add')
                     }}>+ Add channel</span>
             </div>
             <h5>Settings</h5>
@@ -105,7 +105,7 @@ export default function Settings() {
                 <ListGroupItem
                     className="d-flex align-items-center pointer"
                     onClick={() => {
-                        router.push('/settings/password')
+                        router.push('/demo/settings/password')
                     }}
                 >
                     <Image
@@ -128,7 +128,7 @@ export default function Settings() {
                 <ListGroupItem
                     className="d-flex align-items-center pointer"
                     onClick={() => {
-                        router.push('/settings/notifications')
+                        router.push('/demo/settings/notifications')
                     }}
                 >
                     <Image
@@ -154,7 +154,7 @@ export default function Settings() {
                 <ListGroupItem
                     className="d-flex align-items-center pointer"
                     onClick={() => {
-                        router.push('/settings/support')
+                        router.push('/demo/settings/support')
                     }}>
                     <Image
                         priority

@@ -47,16 +47,16 @@ export default function CustomSidebar() {
                 <NavItem>
                     <NavLink
                         className='text-dark'
-                        href="/inbox"
-                        active={pathname == '/inbox'}
+                        href="/demo/inbox"
+                        active={pathname == '/demo/inbox'}
                         onClick={(e) => {
                             e.preventDefault();
-                            router.push('/inbox')
+                            router.push('/demo/inbox')
                         }}
                     >
                         <Image
                             priority
-                            src={pathname == '/inbox' ? inboxIconActive : inboxIcon}
+                            src={pathname == '/demo/inbox' ? inboxIconActive : inboxIcon}
                             width={24}
                             height={24}
                             className='mx-3'
@@ -68,16 +68,16 @@ export default function CustomSidebar() {
                 <NavItem>
                     <NavLink
                         className='text-dark'
-                        href="/approved"
-                        active={pathname == '/approved'}
+                        href="/demo/approved"
+                        active={pathname == '/demo/approved'}
                         onClick={(e) => {
                             e.preventDefault();
-                            router.push('/approved')
+                            router.push('/demo/approved')
                         }}
                     >
                         <Image
                             priority
-                            src={pathname == '/approved' ? approvedIconActive : approvedIcon }
+                            src={pathname == '/demo/approved' ? approvedIconActive : approvedIcon }
                             width={24}
                             height={24}
                             className='mx-3'
@@ -89,16 +89,16 @@ export default function CustomSidebar() {
                 <NavItem>
                     <NavLink
                         className='text-dark'
-                        href="/history"
-                        active={pathname == '/history'}
+                        href="/demo/history"
+                        active={pathname == '/demo/history'}
                         onClick={(e) => {
                             e.preventDefault();
-                            router.push('/history')
+                            router.push('/demo/history')
                         }}
                     >
                         <Image
                             priority
-                            src={pathname == '/history' ? historyIconActive : historyIcon }
+                            src={pathname == '/demo/history' ? historyIconActive : historyIcon }
                             width={24}
                             height={24}
                             className='mx-3'
@@ -110,16 +110,16 @@ export default function CustomSidebar() {
                 <NavItem className='mt-auto'>
                     <NavLink
                         className='text-dark'
-                        href="/settings"
-                        active={pathname.startsWith('/settings')}
+                        href="/demo/settings"
+                        active={pathname.startsWith('/demo/settings')}
                         onClick={(e) => {
                             e.preventDefault();
-                            router.push('/settings')
+                            router.push('/demo/settings')
                         }}
                     >
                         <Image
                             priority
-                            src={pathname.startsWith('/settings') ? settingsIconActive : settingsIcon }
+                            src={pathname.startsWith('/demo/settings') ? settingsIconActive : settingsIcon }
                             width={24}
                             height={24}
                             className='mx-3'

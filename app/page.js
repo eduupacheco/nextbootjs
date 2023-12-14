@@ -33,7 +33,7 @@ function Page() {
               color="dark"
               size="lg"
               onClick={() => {
-                router.push('/inbox')
+                router.push('/demo/inbox')
               }}
             >Live Preview</Button>
           </div>

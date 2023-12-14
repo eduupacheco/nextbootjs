@@ -40,7 +40,7 @@ export default function Page({ params }) {
                 <ListGroupItem
                     className="d-flex align-items-center pointer"
                     onClick={() => {
-                        router.push('/settings/channel/demo');
+                        router.push('/demo/settings/channel/demo');
                     }}
                 >
                     <div style={{ position: "relative" }}>
